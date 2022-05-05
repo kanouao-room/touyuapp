@@ -13,22 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/archives/', function () {
     return view('archives.index');
 });
 
-Route::get('/archives/{category}/',function($category){
-    return view('archives.category' , ['category'=>$category]);
-});
+// Route::get('/archives/{category}/',function($category){
+//     return view('archives.category' , ['category'=>$category]);
+// });
 
 
-Route::get('/sum/{x}/{y}/', 'MathController@sum');
+// Route::get('/sum/{x}/{y}/', 'MathController@sum');
 
-Route::get('/entries/', 'EntriesController@index');
+// Route::get('/entries/', 'EntriesController@index');
 
 
 //getはURLを指定して直接呼び出したとき。
