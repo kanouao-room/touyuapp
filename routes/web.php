@@ -28,6 +28,8 @@ Route::get('/archives/{category}/',function($category){
 
 Route::get('/sum/{x}/{y}/', 'MathController@sum');
 
+Route::get('/entries/', 'EntriesController@index');
+
 
 //getはURLを指定して直接呼び出したとき。
 //postはフォームを使ってpostメソッドというもので呼び出すもの。
